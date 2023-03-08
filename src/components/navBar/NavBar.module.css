@@ -1,0 +1,50 @@
+
+:root {
+    --primary-rgb: 20,20,20;
+    --secondary-rbg: 250, 249, 246;
+    --third-rbg: 0, 51, 102;
+}
+
+
+
+.barWrapper {
+    background: rgb(var(--primary-rgb));
+    display: flex;
+    height: 80px;
+    border: 1px solid red;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 1rem;
+}
+
+.activeButton {
+    color: rgb(var(--third-rbg));
+    font-weight: bold;
+
+}
+
+.button:hover,
+.button:focus {
+    border: 2px solid white;
+    color: rgb(var(--third-rbg));
+    font-weight: bold;
+}
+.button:active {
+    border: 2px solid white;
+    color: rgb(var(--third-rbg));
+    background-color: white;
+}
