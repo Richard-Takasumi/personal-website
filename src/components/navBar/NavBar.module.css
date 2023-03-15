@@ -1,8 +1,9 @@
 
 :root {
-    --primary-rgb: 20,20,20;
-    --secondary-rbg: 250, 249, 246;
-    --third-rbg: 0, 51, 102;
+    --primary-rgb: 20 20 20;
+    --secondary-rbg: 250 249 246; 
+    --third-rbg: 0 51 102;
+    --font: "Space mono", monospace;
 }
 
 
@@ -11,7 +12,6 @@
     background: rgb(var(--primary-rgb));
     display: flex;
     height: 80px;
-    border: 1px solid red;
     justify-content: flex-end;
     align-items: center;
 }
@@ -22,26 +22,27 @@
     align-items: center;
     height: 50px;
     width: 100px;
-    border: 1px solid black;
     margin-right: 20px;
     text-decoration: none;
     color: white;
     -moz-user-select: none;
     -webkit-user-select: none;
     border-radius: 1rem;
+    font-family: var(--font);
+    border: 1px solid rgb(var(--secondary-rbg) / 15%);
 }
 
 .activeButton {
     color: rgb(var(--third-rbg));
     font-weight: bold;
+    pointer-events: none;
 
 }
 
 .button:hover,
 .button:focus {
-    border: 2px solid white;
-    color: rgb(var(--third-rbg));
-    font-weight: bold;
+    border: 3px solid white;
+    color: rgb(var(--secondary-rbg) / 80%);
 }
 .button:active {
     border: 2px solid white;

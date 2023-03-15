@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {Home} from '../src/pages/home/index'
 import {NavBar} from '../src/components/navBar/NavBar';
+import { Showcase } from './pages/showcase';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
 
           <Route path={"/"} exact element={<Home/>}/>
+          <Route path={"showcase"} element={<Showcase/>}/>
         </Routes>
 
     

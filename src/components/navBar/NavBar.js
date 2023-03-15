@@ -9,21 +9,16 @@ import styles from './NavBar.module.css';
 
 export const NavBar = () => {
     
-    const [activePage, setActivePage] = useState('./');
 
-
-    const handleClick = (buttonName) => {
-        setActivePage(buttonName);
-    }
 
     return (
         <div className={styles.barWrapper}>
             <NavLink className=
             {({ isActive, isPending }) => 
                 isPending ? styles.button : isActive ? `${styles.button} ${styles.activeButton}` : styles.button} to={"about"}> About </NavLink>
-            <NavLink className=
+            {/* <NavLink className=
             {({ isActive, isPending }) => 
-                isPending ? styles.button : isActive ? `${styles.button} ${styles.activeButton}` : styles.button} to={"projects"}> Projects </NavLink>
+                isPending ? styles.button : isActive ? `${styles.button} ${styles.activeButton}` : styles.button} to={"projects"}> Projects </NavLink> */}
             <NavLink className=
             {({ isActive, isPending }) => 
                 isPending ? styles.button : isActive ? `${styles.button} ${styles.activeButton}` : styles.button} to={"showcase"}> Showcase </NavLink>
