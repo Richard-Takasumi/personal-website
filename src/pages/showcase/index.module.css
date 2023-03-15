@@ -18,6 +18,8 @@
 }
 
 
+
+
 .wrapper {
     box-sizing: border-box;
     display: flex;
@@ -55,3 +57,4 @@
     object-position: 50% 50%;
 
 }
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useRef, useState} from 'react';
+import {useRef} from 'react';
 import styles from './index.module.css';
 
 export const Showcase = () => {
@@ -16,6 +16,15 @@ export const Showcase = () => {
         "https://images.unsplash.com/photo-1594973782943-3314fe063f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
         "https://images.unsplash.com/photo-1511371496040-1fb40794e675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
     ]
+    // const links = [
+    //     "project-1",
+    //     "project-2",
+    //     "project-3",
+    //     "project-4",
+    //     "project-5",
+    //     "project-6",
+    //     "project-7",
+    // ]
 
     function handleMouseDown (e) {
         track.current.dataset.mouseDownAt = e.clientX;
@@ -57,9 +66,11 @@ export const Showcase = () => {
 
                 <div className={styles.imgTrack} data-mouse-down-at="0" data-prev-percentage="0" ref={track}>
                     {images.map((image, index) => {
-                        return (<img 
-                            ref={el => trackImages.current[index] = el}
-                            src={image} draggable='false' alt=""/>)
+                        return (
+                            <img 
+                                ref={el => trackImages.current[index] = el}
+                                src={image} draggable='false' alt=""/>
+                        )
                     })}
                     {/* <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80" draggable='false' alt=""/>
                     <img src="https://images.unsplash.com/photo-1542931287-023b922fa89b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" draggable='false' alt=""/>

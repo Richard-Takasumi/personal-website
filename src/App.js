@@ -11,7 +11,7 @@ function App() {
         <NavBar/>
         <Routes>
 
-          <Route path={"/"} exact element={<Home/>}/>
+          <Route path={"/"} exact element={<Showcase/>}/>
           <Route path={"showcase"} element={<Showcase/>}/>
         </Routes>
 
