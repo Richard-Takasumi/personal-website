@@ -53,11 +53,11 @@ export const Showcase = () => {
         track.current.dataset.percentage = nextPercentage;
         track.current.animate({
             transform: `translate(${nextPercentage}%, -50%)`
-        }, {duration: 1200, fill: "forwards" });
+        }, {duration: 5000, fill: "forwards", easing: "linear" });
         trackImages.current.forEach((image) => {
             image.animate({
                 objectPosition: `${100 + nextPercentage}% center`
-            }, { duration: 1200, fill: "forwards"});
+            }, { duration: 5000, fill: "forwards", easing: "linear"});
         })
     }
 
