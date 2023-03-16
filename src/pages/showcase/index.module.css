@@ -1,6 +1,8 @@
 * {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow: hidden;
+    
 }
 
 
@@ -14,7 +16,6 @@
 .body {
     box-sizing: border-box;
     height: calc(100vh - 80px);
-    
 }
 
 
@@ -40,7 +41,6 @@
     left: 50%;
     top: 50%;
     transform: translate(0%, -50%);
-    overflow: hidden;
     -moz-user-select: none;
     -webkit-user-select: none;
 }
@@ -55,6 +55,7 @@
     height: 56vmin;
     object-fit: cover;
     object-position: 50% 50%;
+    overflow: hidden;
 
 }
 

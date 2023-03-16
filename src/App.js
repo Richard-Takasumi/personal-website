@@ -12,6 +12,7 @@ function App() {
         <Routes>
 
           <Route path={"/"} exact element={<Showcase/>}/>
+          <Route path={"about"} element={<Showcase/>}/>
           <Route path={"showcase"} element={<Showcase/>}/>
         </Routes>
 
